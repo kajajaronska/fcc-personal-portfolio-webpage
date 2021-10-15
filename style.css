@@ -1,0 +1,32 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**************************/
+/* GENERAL COMPONENTS */
+/*************************/
+
+/**************************/
+/* HEADER*/
+/*************************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 150px;
+    padding: 0px 48px;
+    gap: 100px;
+}
+
+.logo {
+    height: 120px;
+}
+
+/**************************/
+/* MAIN SECTION */
+/*************************/
