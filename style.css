@@ -19,6 +19,7 @@
 
 main {
     background-image: linear-gradient(to top, #3a3d40 0%, white 60%);
+    margin: 0 auto;
 }
 
 body {
@@ -33,6 +34,16 @@ p {
     font-size: 25px;
 }
 
+/* REUSABLE GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    justify-content: center;
+
+}
 
 /**************************/
 /* HEADER*/
@@ -102,13 +113,23 @@ p {
 /*************************/
 
 .projects {
-    /* background-color: #3a3d40; */
+    margin: 10px;
+}
+
+.project-header {
+    font-size: 50px;
+    grid-area: 1 / span 3;
+    justify-self: center;
+    margin-bottom: 20px;
 }
 
 .project-tile {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.349);
-    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ 
     padding: 20px;
     margin-bottom: 10px;
 }
@@ -117,5 +138,26 @@ p {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    background-color: transparent;
+    padding: 10px;
+    filter: brightness(80%);
 }
 
+.project-img:hover {
+    background-color: rgba(255, 255, 255, 0.349);
+    filter: brightness(100%);
+}
+
+.project-link:link,
+.project-link:visited {
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.project-link:hover,
+.project-link:active {
+    font-style: bold;
+    font-size: 30px;
+}
