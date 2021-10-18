@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --sage: #7aa488;
     --dark: #222623; 
     --font-1: 'Cinzel', serif;
     --font-2: 'Raleway', sans-serif;
+    --font-3: 'Montserrat', sans-serif;
 }
 /* Global reset */
 * {
@@ -18,8 +20,10 @@
 /*************************/
 
 main {
-    background-image: linear-gradient(to top, #3a3d40 0%, white 60%);
+    /* background-image: linear-gradient(to top, #3a3d40 0%, white 60%); */
+    background-image: white ;
     margin: 0 auto;
+    width: 100%;
 }
 
 body {
@@ -56,6 +60,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+    z-index:1;
 
     height: 80px;
     width: 100%;
@@ -75,7 +80,7 @@ p {
     align-items: center;
     gap: 40px;
     font-size: 25px;
-    font-family: var(--font-1);
+    font-family: var(--font-3);
 }
 
 .main-nav-link:link,
@@ -113,7 +118,8 @@ p {
 /*************************/
 
 .projects {
-    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 .project-header {
@@ -144,7 +150,7 @@ p {
 }
 
 .project-img:hover {
-    background-color: rgba(255, 255, 255, 0.349);
+    background-color: var(--sage);
     filter: brightness(100%);
 }
 
@@ -153,11 +159,74 @@ p {
     text-decoration: none;
     font-size: 25px;
     text-align: center;
-    color: whitesmoke;
+    color: var(--dark);
 }
 
 .project-link:hover,
 .project-link:active {
     font-style: bold;
     font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+        justify-content: center;
+    
+    }
+}
+
+
+/**************************/
+/* CONTACT SECTION */
+/*************************/
+
+.contact-section {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: stretch;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-link:link,
+.contact-link:visited {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact-link:hover,
+.contact-link:active {
+    text-decoration: underline;
+    color: var(--sage);
+}
+
+.contact-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-header {
+    font-size: 40px;
+}
+
+ion-icon {
+    height: 50px;
 }
