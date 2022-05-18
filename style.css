@@ -41,11 +41,12 @@ p {
 
 
 
+
 /**************************/
 /* HEADER*/
 /*************************/
 
-.header {
+.main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +61,8 @@ p {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     background-color: white;
 }
+
+
 
 .logo {
     height: 70px;
@@ -207,16 +210,16 @@ p {
     margin-top: 50px;
 }
 
-.contact-link:link,
-.contact-link:visited {
+.profile-link:link,
+.profile-link:visited {
     text-decoration: none;
     color: var(--dark);
     font-weight: 600;
     font-size: 20px;
 }
 
-.contact-link:hover,
-.contact-link:active {
+.profile-link:hover,
+.profile-link:active {
     text-decoration: underline;
     color: var(--sage);
 }
