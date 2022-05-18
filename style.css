@@ -4,6 +4,8 @@
 :root {
     --sage: #7aa488;
     --dark: #222623; 
+    --dark-blue: #1F2937;
+    --caramel: #D69461;
     --font-1: 'Cinzel', serif;
     --font-2: 'Raleway', sans-serif;
     --font-3: 'Montserrat', sans-serif;
@@ -58,8 +60,8 @@ p {
     height: 80px;
     width: 100%;
     padding: 0px 48px;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    background-color: white;
+    /* box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); */
+    background-color: var(--dark-blue)
 }
 
 
@@ -82,14 +84,14 @@ p {
 .main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
-    color: var(--dark);
-    font-weight: 700;
+    color: white;
+    font-weight: 500;
     /* transition: all 0.3s; */
 }
 
 .main-nav-link:hover,
 .main-nav-linl:active {
-    color: var(--sage);
+    color: var(--caramel);
 }
 
 /**************************/
@@ -104,9 +106,16 @@ p {
     gap: 10px;
     height: 100vh;
     width: 100%;
-    /* background-image: linear-gradient(to top, #3a3d40 0%, white 60%); */
-    
+    background-color: var(--dark-blue);
+    /* background-image: linear-gradient(to top, #3a3d40 0%, white 60%); */ 
 }
+
+.welcome-section h1,
+.welcome-section p{
+    color: white;
+}
+
+
 
 /**************************/
 /* PROJECTS SECTION */
