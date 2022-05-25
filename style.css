@@ -140,6 +140,8 @@ p {
     grid-area: 1 / span 3;
     justify-self: center;
     margin-bottom: 20px;
+    background-color: var(--caramel);
+    color: white;
 }
 
 .project-tile {
@@ -163,7 +165,7 @@ p {
 }
 
 .project-img:hover {
-    background-color: var(--sage);
+    background-color: var(--caramel);
     filter: brightness(100%);
 }
 
