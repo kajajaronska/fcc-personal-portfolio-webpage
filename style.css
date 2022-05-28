@@ -117,7 +117,7 @@ p {
 /* WELCOME SECTION */
 /*************************/
 
-.welcome-section {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,4 +264,39 @@ p {
 
 ion-icon {
     height: 50px;
+}
+
+
+/**************************/
+/* ABOUT-ME SECTION */
+/*************************/
+.about-me-section {
+    padding: 150px 170px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
+    justify-items: center;
+    align-items: start;
+    column-gap: 5rem;  
+    
+
+    color: white;
+}
+
+.about-me-section img {
+    height: 500px;
+    border-radius: 10px;
+    grid-row: 1 / 5;
+
+}
+
+.about-me-section p{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    /* height: 100%; */
+}
+
+.about-me-section h1{
+
 }
