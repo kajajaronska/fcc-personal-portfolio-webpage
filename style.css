@@ -249,7 +249,7 @@ p {
 .profile-link:hover,
 .profile-link:active {
     text-decoration: underline;
-    color: var(--sage);
+    color: var(--caramel);
 }
 
 .contact-div {
