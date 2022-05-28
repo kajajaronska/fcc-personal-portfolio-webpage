@@ -5,6 +5,7 @@
     --sage: #7aa488;
     --dark: #222623; 
     --dark-blue: #1F2937;
+    --light-blue: #36455b;
     --caramel: #D69461;
     --font-1: 'Cinzel', serif;
     --font-2: 'Raleway', sans-serif;
@@ -93,6 +94,24 @@ p {
 .main-nav-linl:active {
     color: var(--caramel);
 }
+
+.scroll {
+    background-color: white;
+}
+
+.links-on-scroll:link, 
+.links-on-scroll:visited {
+    color: var(--caramel);
+}
+
+.links-on-scroll:hover, 
+.links-on-scroll:active {
+    color: var(--light-blue);
+}
+
+
+
+
 
 /**************************/
 /* WELCOME SECTION */
