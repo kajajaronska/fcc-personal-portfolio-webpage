@@ -150,7 +150,6 @@ p {
     align-items: center;
     justify-content: center;
     gap: 10px;
- 
     padding: 20px;
     margin-bottom: 10px;
 }
@@ -160,12 +159,10 @@ p {
     height: 300px;
     border-radius: 50%;
     background-color: transparent;
-    padding: 10px;
     filter: brightness(80%);
 }
 
 .project-img:hover {
-    background-color: var(--caramel);
     filter: brightness(100%);
 }
 
@@ -180,7 +177,8 @@ p {
 .project-link:hover,
 .project-link:active {
     font-style: bold;
-    font-size: 30px;
+    /* font-size: 30px; */
+    color: var(--caramel);
 }
 
 @media (max-width: 1000px) {
