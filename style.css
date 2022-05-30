@@ -271,7 +271,7 @@ ion-icon {
 /* ABOUT-ME SECTION */
 /*************************/
 .about-me-section {
-    padding: 150px 170px;
+    padding: 100px 150px;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -281,7 +281,9 @@ ion-icon {
     column-gap: 5rem;  
     
 
-    color: white;
+    color: whitesmoke;
+
+    overflow: hidden;
 }
 
 .about-me-section img {
@@ -298,5 +300,5 @@ ion-icon {
 }
 
 .about-me-section h1{
-
+    justify-self: start;
 }
